@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолео</title>
+</head>
+<body>
+    <header>
+        <h1>Здравствуйте, меня зовут Ахмед Януркаев</h1>
+        <h2>Я ученик школы программирования "itansar"</h2>
+        <p>Я как начинающий программист стараюсь не пользоваться гуглом,
+            хотя в программировании это дело не постыдное
+        </p>
+        <img src="image.png" width="200" alt="Моё фото" />
+        <p>Вот моя страница с проектами, но так как я ученик, они все тестовые. 
+            О некоторых из них расскажу чуть позже.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Связь</a></li>
+                <li><a href="https://github.com/dashboard">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h3>Мои навыки</h3>
+            <ul>
+                <li>Скрапинг</li>
+                <li>Деплой и умения в области базы данных</li>
+                <li>Создание телеграм-ботов</li>
+                <li>Умение пользоваться HTML</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h3>Что я умею делать</h3>
+            <ol>
+                <li>Создавать состояния бота для многозадачности</li>
+                <li>Парсить текст, изображения, ссылки</li>
+                <li>Работать сразу с несколькими страницами</li>
+            </ol>
+
+            <h3>Мои проекты</h3>
+            <table border="1">
+                <tr>
+                    <th>Название проекта</th>
+                    <th>Функция проекта</th>
+                    <th>Технологии</th>
+                </tr>
+                <tr>
+                    <td>testPandas</td>
+                    <td>Работа с базой данных</td>
+                    <td>Jupyter Notebook</td>
+                </tr>
+                <tr>
+                    <td>testSelenium</td>
+                    <td>Сбор информации</td>
+                    <td>Selenium</td>
+                </tr>
+                <tr>
+                    <td>testBookHotel</td>
+                    <td>Бронирование отеля</td>
+                    <td>Aiogram, FSM, Router</td>
+                </tr>
+                <tr>
+                    <td>testPyTest</td>
+                    <td>Тестирование</td>
+                    <td>PyTest</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>Связаться со мной</h3>
+            <form method="post">
+                <label for="userName">Имя пользователя</label>
+                <input type="text" id="userName" name="userName" required />
+            
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required />
+            
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" name="userEmail" required />
+            
+                <label for="topic">Тема обращения</label>
+                <select id="topic" name="topic" required>
+                    <option value="">-- Выберите тему --</option>
+                    <option value="general">Общие вопросы</option>
+                    <option value="bug">Сообщить об ошибке</option>
+                    <option value="suggestion">Предложение</option>
+                    <option value="other">Другое</option>
+                </select>
+            
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ахмед Януркаев</p>
+    </footer>
+</body>
+</html>
+
